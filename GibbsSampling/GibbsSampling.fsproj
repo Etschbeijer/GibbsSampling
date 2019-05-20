@@ -5,7 +5,46 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <None Include="dlls\BioFSharp.Stats.dll" />
+    <None Include="dlls\BioFSharp.IO.dll" />
+    <None Include="dlls\FSharp.Plotly.dll" />
+    <None Include="dlls\FSharpAux.IO.dll" />
+    <None Include="dlls\FSharpAux.dll" />
+    <None Include="dlls\FSharp.Core.resources.dll" />
+    <None Include="dlls\FSharp.Core.dll" />
+    <None Include="dlls\BioFSharp.dll" />
+    <Compile Include="GibbsSampling.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="GibbsSampling.fsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BioFSharp">
+      <HintPath>dlls\BioFSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BioFSharp.IO">
+      <HintPath>dlls\BioFSharp.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="BioFSharp.Stats">
+      <HintPath>dlls\BioFSharp.Stats.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>dlls\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core.resources">
+      <HintPath>dlls\FSharp.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Plotly">
+      <HintPath>dlls\FSharp.Plotly.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharpAux">
+      <HintPath>dlls\FSharpAux.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharpAux.IO">
+      <HintPath>dlls\FSharpAux.IO.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
